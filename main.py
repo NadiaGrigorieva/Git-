@@ -20,7 +20,7 @@ class Example(QMainWindow):
     def paintEvent(self, event):
         if self.do_paint:
             self.size = random.randint(5, 100)
-            self.color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+            self.color = (255, 255, 0)
             qp = QPainter()
             qp.begin(self)
             qp.setPen(QColor(*self.color))
